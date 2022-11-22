@@ -1,0 +1,228 @@
+body {
+  background-color: rgb(243, 243, 243);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: rgb(132, 41, 41); */
+}
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+header .menu ul,
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+/* .footer a {
+  color: rgb(2, 21, 45) !important;
+} */
+
+/* ul li > ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  z-index: 30;
+  background-color: #fff;
+} */
+
+header li {
+  background-color: #008acf;
+  padding: 0.5rem;
+  border-radius: 999px;
+  box-shadow: inset 1px 8px 20px rgba(0, 0, 0, 0.325);
+  width: 100px;
+  text-align: center;
+  transition: all 0.5s;
+  /* perspective: 100px; */
+}
+
+header li:hover {
+  /* background-color: #fff; */
+  transform: scale(1.2);
+}
+
+li a {
+  color: white !important;
+}
+
+footer ul li a {
+  color: rgb(2, 21, 45);
+}
+
+.show-case {
+  width: 100%;
+  overflow: hidden;
+  /* height: 500px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  background: linear-gradient(156deg, #00a9ff, rgb(255, 255, 255) 91%);
+}
+
+.show-case .overlay {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.379);
+}
+
+.show-case h1 {
+  position: absolute;
+  z-index: 30;
+  color: white;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  font-size: 45px;
+}
+
+.show-case img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* about section */
+
+.about {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  color: white;
+
+  /* background: linear-gradient(156deg, #00a9ff, rgb(94 27 46) 91%); */
+}
+
+.about div {
+  /* background-color: rgb(246, 246, 246); */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  color: rgb(1, 22, 34);
+}
+
+.about div:hover {
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.291);
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(156deg, #00a9ff, rgb(94 27 46) 91%); */
+  background: linear-gradient(156deg, #00a9ff, rgb(255, 255, 255) 91%);
+
+  transform: scale(1.1);
+  color: rgb(1, 22, 34);
+}
+
+.mission:hover {
+  background: rgb(255, 255, 255);
+  transform: scale(1.1);
+  color: rgb(1, 22, 34);
+}
+.vision:hover {
+  background: rgb(0, 51, 139);
+  transform: scale(1.1);
+}
+.values:hover {
+  background: rgb(213, 41, 247);
+  transform: scale(1.1);
+}
+
+.about .icon {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  padding: 1rem;
+  margin-top: auto;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.footer a {
+  color: rgb(2, 21, 45) !important;
+}
+
+/* articles */
+
+.conatiner-articles {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: none;
+}
+
+.articles {
+  display: flex;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  width: 580px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid rgb(227, 227, 227);
+}
+.article:hover {
+  /* background-color: #fff; */
+  transform: scale(1.05);
+}
+
+.article .body-article {
+  padding: 1rem;
+}
+
+.article a {
+  background: linear-gradient(156deg, #00a9ff, rgb(0, 81, 162) 91%);
+  color: rgb(254, 254, 254);
+  width: 50%;
+  display: block;
+  padding: 10px 8px;
+  text-align: center;
+  /* background-color: rgb(163, 16, 16); */
+
+  font-size: 20px;
+  font-weight: bold;
+}
